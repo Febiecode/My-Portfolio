@@ -5,106 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sathyakumar | Portfolio</title>
-
-    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="mouse-circle"></div>
-    <div class="header">
-        <div class="nav-bar">
-            <nav>
-                <div class="logo">
-                    <span class="st1"><</span>
-                    <span class="name">Sathyakumar</span>
-                    <span class="st1">/></span>
-                </div>
-                <div class="menu">
-                    <ul style="list-style-type: none;">
-                        <a href="#"><li id="active">Start<span class="st2">/></span></li></a>
-                        <a href="#work"><li>work<span class="st2">/></span></li></a>
-                        <a href="#"><li>about<span class="st2">/></span></li></a>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <div class="start">
-            <div class="line"></div>
-            <div class="content">
-                <span class="st2" style="font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Start /></span>
-
-                <p class="entry-content">Hi, my name is <span style="color:#5918df;"> Sathyakumar</span></p>
-                <p class="entry-content">i <span style="font-family: 'Georgia Bold Italic';">design </span>and develop <span style="color: #fff;">websites</span></p>
-
-                <p class="st2" style="position: relative; top: 70px; font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Let me show You...</p>
-                <div class="indicator"></div>
-            </div>
-        </div>
-    </div>
-    <div class="work" id="work">
-        
-        <div class="content1">
-            <span class="st2" style="font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Work /></span>
-            <p class="st2" style="font-family: 'Roboto Condensed', sans-serif; font-size: 30px;;"><b>Selected web, mobile, video projects...</b></p>
-            <div class="cards">
-                <div class="card1">
-                    <a href="#" class="clickable-card">
-                        <article>
-                          <div class="article-wrapper">
-                            <figure>
-                              <img src="https://picsum.photos/id/1011/800/450" alt="" />
-                            </figure>
-                            <div class="article-body">
-                              <h2>Customer Relationship Management</h2>
-                              <p>
-                                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-                              </p>
-                              <div class="read-more">Read more</span>
+<body class="overflow-x-hidden">
+    <div class=" ">
+      
+      <div id="mouse-circle"></div>
+      <div class="header">
+          <div class="nav-bar">
+              <nav>
+                  <div class="logo">
+                      <span class="st1"><</span>
+                      <span class="name">Sathyakumar</span>
+                      <span class="st1">/></span>
+                  </div>
+                  <div class="menu">
+                      <ul style="list-style-type: none;">
+                          <a href="#"><li id="active">Start<span class="st2">/></span></li></a>
+                          <a href="#work"><li>work<span class="st2">/></span></li></a>
+                          <a href="#"><li>about<span class="st2">/></span></li></a>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+  
+          <div class="start">
+              <div class="line"></div>
+              <div class="content">
+                  <span class="st2 " style="font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Start /></span>
+  
+                  <p class="entry-content">Hi, my name is <span style="color:#5918df;"> Sathyakumar</span></p>
+                  <p class="entry-content">i <span style="font-family: 'Georgia Bold Italic';">design </span>and develop <span style="color: #fff;">websites</span></p>
+  
+                  <p class="st2" style="position: relative; top: 70px; font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Let me show You...</p>
+                  <div class="indicator"></div>
+              </div>
+          </div>
+      </div>
+      <div class="work" id="work">
+          
+          <div class="content1">
+              <span class="st2" style="font-family: 'Roboto Condensed', sans-serif; ">Work /></span>
+              <p class="st2" style="font-family: 'Roboto Condensed', sans-serif; font-size: 30px;;"><b>Selected web, mobile, video projects...</b></p>
+              <div class="cards">
+                  <div class="card1">
+                      <a href="#" class="clickable-card">
+                          <article>
+                            <div class="article-wrapper">
+                              <figure>
+                                <img src="https://picsum.photos/id/1011/800/450" alt="" />
+                              </figure>
+                              <div class="article-body">
+                                <h2>Customer Relationship Management</h2>
+                                <p>
+                                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                                </p>
+                                <div class="read-more">Read more</span>
+                                </div>
                               </div>
-                            </div>
-                        </article>
-                      </a>
-                </div>
-
-                <div class="card2">
-                    <a href="#" class="clickable-card">
-                        <article>
-                          <div class="article-wrapper">
-                            <figure>
-                              <img src="https://picsum.photos/id/1011/800/450" alt="" />
-                            </figure>
-                            <div class="article-body">
-                              <h2>Ecommerce</h2>
-                              <p>
-                                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-                              </p>
-                              <div class="read-more">Read more</span>
+                          </article>
+                        </a>
+                  </div>
+  
+                  <div class="card2">
+                      <a href="#" class="clickable-card">
+                          <article>
+                            <div class="article-wrapper">
+                              <figure>
+                                <img src="https://picsum.photos/id/1011/800/450" alt="" />
+                              </figure>
+                              <div class="article-body">
+                                <h2>Ecommerce</h2>
+                                <p>
+                                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                                </p>
+                                <div class="read-more">Read more</span>
+                                </div>
                               </div>
-                            </div>
-                        </article>
-                      </a>
-                </div>
-
-                <div class="card3">
-                    <a href="#" class="clickable-card">
-                        <article>
-                          <div class="article-wrapper">
-                            <figure>
-                              <img src="https://picsum.photos/id/1011/800/450" alt="" />
-                            </figure>
-                            <div class="article-body">
-                              <h2>Communicator app</h2>
-                              <p>
-                                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-                              </p>
-                              <div class="read-more">Read more</span>
+                          </article>
+                        </a>
+                  </div>
+  
+                  <div class="card3">
+                      <a href="#" class="clickable-card">
+                          <article>
+                            <div class="article-wrapper">
+                              <figure>
+                                <img src="https://picsum.photos/id/1011/800/450" alt="" />
+                              </figure>
+                              <div class="article-body">
+                                <h2>Communicator app</h2>
+                                <p>
+                                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                                </p>
+                                <div class="read-more">Read more</span>
+                                </div>
                               </div>
-                            </div>
-                        </article>
-                      </a>
-                </div>
-            </div>
-        </div>
+                          </article>
+                        </a>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
 
     
