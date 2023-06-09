@@ -156,9 +156,11 @@ a{
     width: 50%;
     color: #fff;
     z-index: 2px;
-    left: 360px;
+    left: 28%;
     top: 160px;
 }
+
+
 
 .entry-content{
     position: relative;
@@ -306,4 +308,53 @@ a{
     position: relative;
     right: 100px;
     padding: 20px;
+}
+
+
+@media screen and (max-width:320px) {
+
+    .content{
+    position:absolute;
+    width: 50%;
+    color: #fff;
+    z-index: 2px;
+    margin-top: 20px;
+    left: 50px;        
+    }
+
+    .indicator{
+        left: -37px;
+        width: 35px;
+        height: 45px;
+        top: -40px;
+    }
+    
+    .line{
+        border-left: 2px solid #5918df;
+        height: 5000px;
+        position: absolute;
+        left: 10%;
+        margin-left: -3px;
+        top: 175px;
+    }
+
+    .entry-content{
+        font-size: 10px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .nav-bar{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin-left: 25px;
+    }
+
+    .entry-content{
+        font-size: 30px;
+    }
+        
 }
