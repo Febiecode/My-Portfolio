@@ -8,6 +8,20 @@
         'opsz'48
 }
 
+.material-symbols-outlined {
+    font-size: 20px;
+    color: #5918df;
+    position: relative;
+    z-index: 9;
+    left: 160px;
+    top: 10px;
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
+}
+
 
 /* Google fonts */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -36,6 +50,162 @@ html {
     scroll-behavior: smooth;
     cursor: none;
 }
+
+.nav-bar {
+    background-color: #100e17;
+    height: 100px;
+    position: fixed;
+    top: -20px;
+    right: 10px;
+    width: 100%;
+    z-index: 9;
+    display: block;
+    transition: top 0.3s;
+}
+
+/* mobile navbar */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
+
+#main-menu {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background: #3D0E61;
+    margin: 0px;
+    z-index: 9;
+}
+
+#main-menu ul {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9;
+}
+
+#main-menu li {
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+#main-menu a {
+    color: #595360;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#main-menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input {
+    display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(to bottom,
+            #fff, #fff 20%,
+            #100e17 20%, #100e17 40%,
+            #fff 40%, #fff 60%,
+            #100e17 60%, #100e17 80%,
+            #fff 80%, #fff 100%);
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #100e17;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+/* #hamburger-menu h3 {
+    color: #B9FAF8;
+    font-size: 2.2rem;
+} */
+
+#hamburger-menu ul {
+    position: relative;
+    left: 20px;
+    top: 50px;
+    padding-left: 0px;
+}
+
+#hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+}
+
+#hamburger-menu a {
+    color: #595360;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input:checked+#hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+
+#hamburger-input:checked~.overlay {
+    visibility: visible;
+    opacity: 0.4;
+}
+
+
+@media screen and (max-width: 750px) {
+    #main-menu {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: inline;
+    }
+
+    .mb-nav {
+        position: relative;
+        z-index: 9;
+    }
+}
+
+
 
 
 #mouse-circle {
@@ -775,6 +945,11 @@ textarea {
         margin-left: 25px;
     }
 
+    .logo{
+        position: relative;
+        left: 40px;
+    }
+
     .work {
         height: 580px;
     }
@@ -978,6 +1153,11 @@ textarea {
         margin-left: 25px;
     }
 
+    .logo{
+        position: relative;
+        left: 30px;
+    }
+
     .work {
         height: 600px;
     }
@@ -1078,6 +1258,21 @@ textarea {
 }
 
 @media screen and (max-width:426px) {
+
+    .logo {
+        position: relative;
+        left: 90px;
+        top: -2px;
+    }
+
+    .st1 {
+        font-size: 40px;
+    }
+
+    #hamburger-menu {
+        width: 30px;
+        height: 30px;
+    }
 
     .header {
         height: 550px;
@@ -1206,9 +1401,9 @@ textarea {
         width: 80%;
     }
 
-    #myForm {
+    .my-form {
         position: relative;
-        left: 30px;
+        left: 75px;
     }
 
     .footer-content {
@@ -1228,6 +1423,21 @@ textarea {
 }
 
 @media screen and (max-width:376px) {
+
+    #hamburger-menu {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo {
+        position: relative;
+        left: 70px;
+        top: -2px;
+    }
+
+    .st1 {
+        font-size: 40px;
+    }
 
     .work {
         height: 720px;
@@ -1269,9 +1479,9 @@ textarea {
         width: 75%;
     }
 
-    #myForm {
+    .my-form {
         position: relative;
-        left: 25px;
+        left: 70px;
     }
 
     .footer-content {
@@ -1314,13 +1524,19 @@ textarea {
     }
 
     .name {
-        font-size: 20px;
+        position: relative;
+        top: 5px;
+        font-size: 30px;
     }
 
     .logo {
-        .st1 {
-            font-size: 30px;
-        }
+        position: relative;
+        left: 60px;
+        top: 2px;
+    }
+
+    .st1 {
+        font-size: 30px;
     }
 
     .line {
@@ -1337,6 +1553,8 @@ textarea {
     }
 
     .nav-bar {
+        position: fixed;
+        height: 80px;
         display: flex;
         justify-content: start;
         align-items: start;
@@ -1429,9 +1647,9 @@ textarea {
         width: 80%;
     }
 
-    #myForm {
+    .my-form {
         position: relative;
-        left: 25px;
+        left: 50px;
     }
 
     .footer-content {

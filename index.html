@@ -34,7 +34,11 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
   <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body class="overflow-x-hidden">
@@ -44,32 +48,49 @@
     <div class="header">
       <div class="nav-bar">
         <nav>
+          <div class="mb-nav">
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+            <label id="hamburger-menu" for="hamburger-input">
+              <nav id="sidebar-menu">
+                <span class="material-symbols-outlined">
+                  close
+                  </span>
+                <ul>
+                  <li><a href="#start">Start/&gt;</a></li>
+                  <li><a href="#work">Work/&gt;</a></li>
+                  <li><a href="#about">About/&gt;</a></li>
+                  <li><a href="#contact">Contact/&gt;</a></li>
+                </ul>
+              </nav>
+            </label>
+
+            <div class="overlay"></div>
+          </div>
           <div class="logo">
-            <span class="st1">
-              <span class="st1"><</span>
-                <span class="name">Sathyakumar</span>
-                <span class="st1">/></span>
-          </div>
-          <div class="menu">
-            <ul style="list-style-type: none;">
-              <a href="#">
-                <li id="active">start<span class="st2">/></span></li>
-              </a>
-              <a href="#work">
-                <li>work<span class="st2">/></span></li>
-              </a>
-              <a href="#about">
-                <li>about<span class="st2">/></span></li>
-              </a>
-              <a href="#contact">
-                <li>contact<span class="st2">/></span></li>
-              </a>
-            </ul>
-          </div>
+                    <span class="st1">&lt;</span>
+                      <span class="name">Sathyakumar</span>
+                      <span class="st1">/&gt;</span>
+            </div>
+            <div class="menu">
+              <ul style="list-style-type: none;">
+                <a href="#start">
+                  <li id="active">start<span class="st2">/></span></li>
+                </a>
+                <a href="#work">
+                  <li>work<span class="st2">/></span></li>
+                </a>
+                <a href="#about">
+                  <li>about<span class="st2">/></span></li>
+                </a>
+                <a href="#contact">
+                  <li>contact<span class="st2">/></span></li>
+                </a>
+              </ul>
+            </div>
         </nav>
       </div>
 
-      <div class="start">
+      <div class="start" id="start">
         <div class="line"></div>
         <div class="content">
           <span class="st2 " style="font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Start /></span>
@@ -428,7 +449,7 @@
     <div class="line1""></div>
     
 
-    <div class="footer-content">
+    <div class=" footer-content">
       <div class="contact-content">
         <p class="footer-subContent white"><b>Find me on...</b></p>
       </div>
@@ -458,7 +479,7 @@
               </g>
             </svg>
           </a>
-          
+
         </div>
 
 
@@ -537,12 +558,13 @@
             </svg>
           </a>
         </div>
-        
+
       </div>
       <a href="#contact">
         <button class="button-48" role="button"><span class="text">Get in Touch</span></button>
       </a>
-      <div class="copyright gray" >© Made with <span><</span><span>/></span> by Sathyakumar. Time2ER 2023.</div>
+      <div class="copyright gray">© Made with <span>
+          << /span><span>/></span> by Sathyakumar. Time2ER 2023.</div>
     </div>
   </div>
 
