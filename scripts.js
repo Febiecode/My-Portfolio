@@ -46,3 +46,11 @@ function validation() {
       document.getElementById("myForm").action = "https://formspree.io/f/xzbqlnqd";
     }
   }
+
+  function closeNav() {
+    document.getElementById('hamburger-input').checked = false;
+  }
+
+  function home(){
+    location.href = "#start";
+  }

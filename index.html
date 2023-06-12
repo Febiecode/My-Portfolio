@@ -48,7 +48,7 @@
     <div class="header">
       <div class="nav-bar">
         <nav>
-          <div class="mb-nav">
+          <div class="mb-nav" >
             <input type="checkbox" id="hamburger-input" class="burger-shower" />
             <label id="hamburger-menu" for="hamburger-input">
               <nav id="sidebar-menu">
@@ -56,17 +56,18 @@
                   close
                   </span>
                 <ul>
-                  <li><a href="#start">Start/&gt;</a></li>
-                  <li><a href="#work">Work/&gt;</a></li>
-                  <li><a href="#about">About/&gt;</a></li>
-                  <li><a href="#contact">Contact/&gt;</a></li>
+                  
+                  <li><a onclick="closeNav();" href="#start">Start/&gt;</a></li>
+                  <li><a onclick="closeNav();" href="#work">Work/&gt;</a></li>
+                  <li><a onclick="closeNav();" href="#about">About/&gt;</a></li>
+                  <li><a onclick="closeNav();" href="#contact">Contact/&gt;</a></li>
                 </ul>
               </nav>
             </label>
 
             <div class="overlay"></div>
           </div>
-          <div class="logo">
+          <div class="logo" onclick="home();">
                     <span class="st1">&lt;</span>
                       <span class="name">Sathyakumar</span>
                       <span class="st1">/&gt;</span>
@@ -563,8 +564,7 @@
       <a href="#contact">
         <button class="button-48" role="button"><span class="text">Get in Touch</span></button>
       </a>
-      <div class="copyright gray">© Made with <span>
-          << /span><span>/></span> by Sathyakumar. Time2ER 2023.</div>
+      <div class="copyright gray">© Made with &lt;/&gt; by Sathyakumar. Time2ER 2023.</div>
     </div>
   </div>
 
