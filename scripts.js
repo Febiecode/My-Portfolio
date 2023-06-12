@@ -23,3 +23,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     delayMouseFollow();
 });
+
+function validation() {
+    let x = document.forms["myForm"]["name"].value;
+    let y = document.forms["myForm"]["email"].value;
+    let check = 0;
+    const regex_pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (regex_pattern.test(y)) {
+      check = 0;
+    }
+    else {
+      check = 1;
+    }
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    } else if (check) {
+      alert("The email address is not valid");
+      return false;
+    } else {
+      document.getElementById("myForm").action = "https://formspree.io/f/xzbqlnqd";
+    }
+  }

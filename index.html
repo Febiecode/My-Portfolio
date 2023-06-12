@@ -1,70 +1,553 @@
 <!DOCTYPE html>
+
+<!-- &rcub; &lcub; -->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sathyakumar | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sathyakumar | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
       }
-    </script>
-    <style type="text/tailwindcss">
-      @layer utilities {
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
         .content-auto {
           content-visibility: auto;
         }
       }
     </style>
-    <link rel="stylesheet" href="style.css">
+
+
+  <!-- google icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="overflow-x-hidden">
-    <div class="">
-      
-      <div id="mouse-circle"></div>
-      <div class="header">
-          <div class="nav-bar">
-              <nav>
-                  <div class="logo">
-                      <span class="st1"><</span>
-                      <span class="name">Sathyakumar</span>
-                      <span class="st1">/></span>
-                  </div>
-                  <div class="menu">
-                      <ul style="list-style-type: none;">
-                          <a href="#"><li id="active">Start<span class="st2">/></span></li></a>
-                          <a href="#work"><li>work<span class="st2">/></span></li></a>
-                          <a href="#"><li>about<span class="st2">/></span></li></a>
-                      </ul>
-                  </div>
-              </nav>
+  <div class="">
+
+    <div id="mouse-circle"></div>
+    <div class="header">
+      <div class="nav-bar">
+        <nav>
+          <div class="logo">
+            <span class="st1">
+              <span class="st1"><</span>
+                <span class="name">Sathyakumar</span>
+                <span class="st1">/></span>
           </div>
-  
-          <div class="start">
-              <div class="line"></div>
-              <div class="content">
-                  <span class="st2 " style="font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Start /></span>
-  
-                  <p class="entry-content">Hi, my name is <span style="color:#5918df;"> Sathyakumar</span></p>
-                  <p class="entry-content">i <span style="font-family: 'Georgia Bold Italic';">design </span>and develop <span style="color: #fff;">websites</span></p>
-  
-                  <p class="st2" style="position: relative; top: 70px; font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Let me show You...</p>
-                  <div class="indicator"></div>
-              </div>
+          <div class="menu">
+            <ul style="list-style-type: none;">
+              <a href="#">
+                <li id="active">start<span class="st2">/></span></li>
+              </a>
+              <a href="#work">
+                <li>work<span class="st2">/></span></li>
+              </a>
+              <a href="#about">
+                <li>about<span class="st2">/></span></li>
+              </a>
+              <a href="#contact">
+                <li>contact<span class="st2">/></span></li>
+              </a>
+            </ul>
           </div>
+        </nav>
+      </div>
+
+      <div class="start">
+        <div class="line"></div>
+        <div class="content">
+          <span class="st2 " style="font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Start /></span>
+
+          <p class="entry-content">Hi, my name is <span style="color:#5918df;"> Sathyakumar</span></p>
+          <p class="entry-content">i <span style="font-family: 'Georgia Bold Italic';">design </span>and develop <span
+              style="color: #fff;">websites</span></p>
+
+          <p class="st2"
+            style="position: relative; top: 70px; font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Let me
+            show You...</p>
+          <div class="indicator"></div>
+        </div>
       </div>
     </div>
+  </div>
 
+  <div class="work" id="work">
+    <div class="line1"></div>
+    <div class="work-content">
+      <span class="st2 " style="font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Work /></span>
+      <p class="work-subContent"><b>Selected web Projects...</b></p>
+    </div>
+    <section class="work-section">
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <div class="content1">
+              <img src="research-img.png" />
+              <h3>RESEARCH</h3>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content1">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                nam expedita exercitationem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <div class="content1">
+              <img src="design-img.png" />
+              <h3>DESIGN</h3>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content1">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                nam expedita exercitationem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <div class="content1">
+              <img src="develop-img.png" />
+              <h3>DEVELOP</h3>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content1">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                nam expedita exercitationem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="about" id="about">
+    <div class="line1"></div>
+    <div class="work-content1">
+      <span class="st2 " style="font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">About /></span>
+    </div>
+    <div class="about-content">
+      <div class="num">
+        <p>01</p>
+        <p>02</p>
+        <p>03</p>
+        <p>04</p>
+        <p>05</p>
+        <p>06</p>
+        <p>07</p>
+        <p>08</p>
+        <p>09</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>&nbsp;</p>
+        <p>22</p>
+        <p>23</p>
+        <p>24</p>
+        <p>25</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>26</p>
+        <p>27</p>
+
+      </div>
+      <div class="about-elements">
+        <!-- line 01 -->
+        <div class="about-line">
+          <span class="blue">class</span>
+          <span class="yellow">Sathyakumar </span>
+          <span class="white">&lcub;</span>
+        </div>
+        <!-- line 02 -->
+        <div class="about-line">
+          <span class="gray">··// I can, because I did.</span>
+        </div>
+        <!-- line 03 -->
+        <div class="about-line">
+          <span class="gray">··// My vast variety of skills is continuously expanding.</span>
+        </div>
+
+        <!-- line 04 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="red">constructor</span>
+          <span class="white">&#40;&#41;</span>
+          <span class="white">&lcub;</span>
+        </div>
+
+        <!-- line 5 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="red">this</span>
+          <span class="white">&#46;</span>
+          <span class="fade-green">name</span>
+          <span class="red">=</span>
+          <span class="green">'Sathyakumar'</span>
+        </div>
+
+        <!-- line 6 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="red">this</span>
+          <span class="white">&#46;</span>
+          <span class="fade-green">position</span>
+          <span class="red">=</span>
+          <span class="green">'Developer'</span>
+        </div>
+
+        <!-- line 7 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="red">this</span>
+          <span class="white">&#46;</span>
+          <span class="fade-green">Phone</span>
+          <span class="red">=</span>
+          <span class="green">7358266933</span>
+        </div>
+
+        <!-- line 8 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="white">&rcub;</span>
+        </div>
+
+        <!-- line 9 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="yellow">workExperince</span>
+          <span class="white">&#40;&#41;</span>
+          <span class="white">&lcub;</span>
+        </div>
+
+        <!-- line 10 -->
+        <div class="about-line">
+          <span class="gray">....</span>
+          <span class="fade-blue">return</span>
+          <span class="white">[</span>
+        </div>
+
+        <!-- line 11 -->
+        <div class="about-line">
+          <span class="gray">......</span>
+          <span class="white">&lcub;</span>
+          <span class="green">'Sep 2022-now'</span>
+          <span class="white">:</span>
+          <span class="green">Technical Trainer at Infogro Technology</span>
+          <span class="white">&rcub;,</span>
+        </div>
+
+        <!-- line 12 -->
+        <div class="about-line">
+          <span class="gray">......</span>
+          <span class="white">&lcub;</span>
+          <span class="green">'Aug 2022-Sep 2022'</span>
+          <span class="white">:</span>
+          <span class="green">'Python Django Trainer at Profeena Technologies'</span>
+          <span class="white">&rcub;,</span>
+        </div>
+
+        <!-- line 13 -->
+        <div class="about-line">
+          <span class="gray">......</span>
+          <span class="white">&lcub;</span>
+          <span class="green">'Jul 2022'</span>
+          <span class="white">:</span>
+          <span class="green">'Web Developer Intern at Infogro Technology'</span>
+          <span class="white">&rcub;,</span>
+        </div>
+
+        <!-- line 14 -->
+        <div class="about-line">
+          <span class="gray">......</span>
+          <span class="white">&lcub;</span>
+          <span class="green">'Apr 2022-now'</span>
+          <span class="white">:</span>
+          <span class="green">'Technical Club Event Management Head'</span>
+          <span class="white">&rcub;,</span>
+        </div>
+
+        <!-- line 15 -->
+        <div class="about-line">
+          <span class="gray">......</span>
+          <span class="white">&lcub;</span>
+          <span class="green">'Dec 2021'</span>
+          <span class="white">:</span>
+          <span class="green">'Web Developer Intern at Spark Foundation'</span>
+          <span class="white">&rcub;</span>
+        </div>
+
+        <!-- line 16 -->
+        <div class="about-line">
+          <span class="gray">....</span>
+          <span class="white">]</span>
+        </div>
+
+        <!-- line 17 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="white">&rcub;</span>
+        </div>
+
+        <!-- line 18 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="yellow">education</span>
+          <span class="white">&#40;&#41;</span>
+          <span class="white">&lcub;</span>
+        </div>
+
+        <!-- line 19 -->
+        <div class="about-line">
+          <span class="gray">....</span>
+          <span class="fade-blue">return</span>
+          <span class="white">[</span>
+        </div>
+
+        <!-- line 20 -->
+        <div class="about-line">
+          <span class="gray">......</span>
+          <span class="white">&lcub;</span>
+          <span class="green">'2018-2020'</span>
+          <span class="white">:</span>
+          <span class="green">'Bharathi Matric Hr. Sec. School - HSC'</span>
+          <span class="white">&rcub;,</span>
+        </div>
+
+        <!-- line 21 -->
+        <div class="about-line">
+          <span class="gray">......</span>
+          <span class="white">&lcub;</span>
+          <span class="green">'2020-2024'</span>
+          <span class="white">:</span>
+          <span class="green">'SRM Easwari Engineering College - Bachelor of Technology, Information Technology'</span>
+          <span class="white">&rcub;</span>
+        </div>
+
+        <!-- line 22 -->
+        <div class="about-line">
+          <span class="gray">....</span>
+          <span class="white">]</span>
+        </div>
+
+
+        <!-- line 23 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="white">&rcub;</span>
+        </div>
+
+        <!-- line 24 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="yellow">skills</span>
+          <span class="white">&#40;&#41;</span>
+          <span class="white">&lcub;</span>
+        </div>
+
+        <!-- line 25 -->
+        <div class="about-line">
+          <span class="gray">....</span>
+          <span class="fade-blue">return</span>
+          <span class="white">[</span>
+          <span class="green">'HTML/CSS/JS', 'Node.js', 'Bootstrap/Tailwind', 'ReactJS', 'Python', 'Django',
+            'Kivy/tKinter', 'REST-API', 'Docker/k8s', 'Git&Github', 'MySQL', 'PHP', 'C/C++', 'Java', 'Solidity', 'Lens
+            Studio&#40;Snap AR&#41;', 'Ganache', 'Blockchain'</span>
+          <span class="white">]</span>
+        </div>
+
+        <!-- line 26 -->
+        <div class="about-line">
+          <span class="gray">..</span>
+          <span class="white">&rcub;</span>
+        </div>
+
+        <!-- line 27 -->
+        <div class="about-line">
+          <span class="white">&rcub;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="line1"></div>
+    <div class="work-content">
+      <span class="st2 " style="font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">contact /></span>
+      <p class="work-subContent"><b>Get in Touch...</b></p>
+    </div>
+    <div class="my-form">
+      <form name="myForm" method="post" id="myForm">
+        <input name="name" type="text" class="feedback-input" placeholder="Name" />
+        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+        <textarea name="text" class="feedback-input" placeholder="Your Interest"></textarea>
+        <input name="submit" onclick="validation();" type="submit" value="SUBMIT" />
+      </form>
+    </div>
+  </div>
+
+  <div class="footer" id="footer">
+    <div class="line1""></div>
     
-    <script src="scripts.js"></script>
+
+    <div class="footer-content">
+      <div class="contact-content">
+        <p class="footer-subContent white"><b>Find me on...</b></p>
+      </div>
+      <div class="footer-contact">
+        <div class="icon" style="width: 20px; height: 20px;">
+          <a href="https://www.linkedin.com/in/sathyakumar-srinivasan-09166b208/">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path d="M30 60c16.569 0
+                                          30-13.431 30-30C60 13.431 46.569 0
+                                          30 0 13.431 0 0
+                                          13.431 0 30c0 16.569 13.431 30 30
+                                          30Z" fill="#5918df" class="fill-000000"></path>
+                <path d="M21.883
+                                          43.823V25.524h-5.656v18.3h5.656Zm0-24.785c-.034-1.637-1.125-2.884-2.898-2.884-1.773
+                                          0-2.932 1.247-2.932 2.884 0 1.602
+                                          1.125 2.885 2.864
+                                          2.885h.034c1.807 0 2.932-1.283
+                                          2.932-2.885Zm9.227
+                                          24.785V33.397c0-.558.04-1.116.204-1.513.449-1.116
+                                          1.47-2.27 3.184-2.27 2.246 0 3.654
+                                          1.274 3.654
+                                          3.783v10.426h5.694V33.118c0-5.734-3.061-8.402-7.144-8.402-3.348
+                                          0-4.817 1.871-5.633
+                                          3.145l.04-2.447h-5.684c.082 1.752
+                                          0 18.41 0 18.41h5.685Z" fill="#000000" class="fill-ffffff"></path>
+              </g>
+            </svg>
+          </a>
+          
+        </div>
+
+
+        <div class="icon" style="width: 20px; height: 20px; ">
+          <a href="https://www.instagram.com/bullchron/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.7
+                                      56.7" xml:space="preserve">
+              <path d="M28.2 16.7c-7 0-12.8
+                                        5.7-12.8 12.8s5.7 12.8 12.8 12.8S41
+                                        36.5 41
+                                        29.5s-5.8-12.8-12.8-12.8zm0 21c-4.5
+                                        0-8.2-3.7-8.2-8.2s3.7-8.2 8.2-8.2 8.2
+                                        3.7 8.2 8.2-3.7
+                                        8.2-8.2 8.2z" fill="#5918df" class="fill-000000"></path>
+              <circle cx="41.5" cy="16.4" r="2.9" fill="#5918df" class="fill-000000"></circle>
+              <path d="M49
+                                        8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7
+                                        0-14.5 5.8-14.5
+                                        14.5v20.5c0 4.3 1.4 8 4.2 10.7 2.7 2.6
+                                        6.3 3.9 10.4
+                                        3.9h20.4c4.3 0 7.9-1.4 10.5-3.9
+                                        2.7-2.6 4.1-6.3
+                                        4.1-10.6V19.3c0-4.2-1.4-7.8-4-10.4zm-.4
+                                        31c0 3.1-1.1
+                                        5.6-2.9 7.3s-4.3 2.6-7.3 2.6H18c-3
+                                        0-5.5-.9-7.3-2.6C8.9
+                                        45.4 8 42.9 8 39.8V19.3c0-3 .9-5.5
+                                        2.7-7.3 1.7-1.7
+                                        4.3-2.6 7.3-2.6h20.6c3 0 5.5.9 7.3 2.7
+                                        1.7 1.8 2.7 4.3
+                                        2.7 7.2v20.6z" fill="#5918df" class="fill-000000"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="icon" style="width: 20px; height: 20px;">
+          <a href="https://github.com/Febiecode">
+            <svg viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M296.133 354.174c49.885-5.891
+                                        102.942-24.029
+                                        102.942-110.192
+                                        0-24.49-8.624-44.448-22.67-59.869
+                                        2.266-5.89
+                                        9.515-28.114-2.734-58.947 0
+                                        0-18.139-5.898-60.759
+                                        22.669-18.139-4.983-38.09-8.163-56.682-8.163-19.053
+                                        0-39.011
+                                        3.18-56.697
+                                        8.163-43.082-28.567-61.22-22.669-61.22-22.669-12.241
+                                        30.833-4.983 53.057-2.718
+                                        58.947-14.061 15.42-22.677
+                                        35.379-22.677 59.869 0 86.163 53.057
+                                        104.301 102.942
+                                        110.192-6.344 5.452-12.241
+                                        15.873-14.507 30.387-12.702
+                                        5.438-45.808 15.873-65.758-18.592 0
+                                        0-11.795-21.31-34.012-22.669 0
+                                        0-22.224-.453-1.813 13.592 0
+                                        0 14.96 6.812 24.943 32.653 0 0 13.6
+                                        43.089 76.179
+                                        29.48v38.543c0 5.906-4.53
+                                        12.702-15.865 10.89C96.139 438.977
+                                        32.2 354.626 32.2 255.77c0-123.807
+                                        100.216-224.022
+                                        224.03-224.022 123.347 0 224.023
+                                        100.216 223.57 224.022 0
+                                        98.856-63.946 182.754-152.828
+                                        212.688-11.342
+                                        2.266-15.873-4.53-15.873-10.89V395.45c.001-20.873-6.811-34.465-14.966-41.276zM512
+                                        256.23C512 114.73 397.263 0 256.23 0
+                                        114.73 0 0 114.73 0
+                                        256.23 0 397.263 114.73 512 256.23 512
+                                        397.263 512 512
+                                        397.263 512 256.23z" fill="#5918df" fill-rule="evenodd" class="fill-0d2636">
+              </path>
+            </svg>
+          </a>
+        </div>
+        
+      </div>
+      <a href="#contact">
+        <button class="button-48" role="button"><span class="text">Get in Touch</span></button>
+      </a>
+      <div class="copyright gray" >© Made with <span><</span><span>/></span> by Sathyakumar. Time2ER 2023.</div>
+    </div>
+  </div>
+
+
+  <script src="scripts.js"></script>
 </body>
+
 </html>
