@@ -1579,12 +1579,13 @@ textarea {
 
     .about-line {
         width: 100%;
+        font-size: 14px;
     }
 
     .num {
         display: none;
     }
-
+    
     .contact-content {
         position: relative;
         top: 30px;
