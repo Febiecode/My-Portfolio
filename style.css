@@ -1516,6 +1516,17 @@ textarea {
     }
 }
 
+@media screen and (max-width:320px){
+    .line1 {
+        width: 10%;
+    }
+
+    .line1::before {
+        position: absolute;
+        left: -50px;
+    }
+}
+
 
 @media screen and (max-width:290px) {
 
@@ -1591,7 +1602,7 @@ textarea {
     }
 
     .work {
-        height: 720px;
+        height: 800px;
     }
 
     .work-content {
