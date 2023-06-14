@@ -448,8 +448,10 @@ section {
     align-items: center;
     justify-content: center;
     color: #3e1695;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
 }
 
 .line1 {
