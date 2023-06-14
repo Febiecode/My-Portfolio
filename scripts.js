@@ -54,3 +54,17 @@ function validation() {
   function home(){
     location.href = "#start";
   }
+
+  mobiscroll.settings = {
+    theme: 'ios',
+    themeVariant: 'light'
+}
+
+mobiscroll.nav('#nav', {
+    display: 'inline',
+    type: 'tab',
+    onItemTap: function (event, inst) {
+        document.querySelector('.md-card-tab-sel').classList.remove('md-card-tab-sel');
+        document.getElementById(event.target.getAttribute('data-tab')).classList.add('md-card-tab-sel');
+    }
+});
