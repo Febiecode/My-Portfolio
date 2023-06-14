@@ -1683,3 +1683,9 @@ textarea {
         margin-bottom: 20px;
     }
 }
+
+@media screen and (min-width:290px){
+    .work{
+        height: 900px;
+    }
+}
