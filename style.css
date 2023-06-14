@@ -1525,6 +1525,10 @@ textarea {
         position: absolute;
         left: -50px;
     }
+
+    .work{
+        height: 800px;
+    }
 }
 
 
