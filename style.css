@@ -449,6 +449,7 @@ section {
     justify-content: center;
     color: #3e1695;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .line1 {
