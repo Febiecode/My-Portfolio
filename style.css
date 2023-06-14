@@ -1517,7 +1517,7 @@ textarea {
 }
 
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:319px) {
 
     .header {
         height: 600px;
@@ -1687,5 +1687,18 @@ textarea {
 @media screen and (min-width:290px){
     .work{
         height: 900px;
+    }
+
+    .line{
+        height: 3485px;
+    }
+
+    .line1 {
+        width: 10%;
+    }
+
+    .line1::before {
+        position: absolute;
+        left: -54px;
     }
 }
