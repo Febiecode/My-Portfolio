@@ -1517,7 +1517,7 @@ textarea {
 }
 
 
-@media screen and (max-width:319px) {
+@media screen and (max-width:290px) {
 
     .header {
         height: 600px;
@@ -1557,11 +1557,20 @@ textarea {
 
     .line {
         border-left: 2px solid #5918df;
-        height: 3660px;
+        height: 3750px;
         position: absolute;
         left: 10%;
         margin-left: -3px;
         top: 120px;
+    }
+
+    .line1 {
+        width: 10%;
+    }
+
+    .line1::before {
+        position: absolute;
+        left: -40px;
     }
 
     .menu {
@@ -1606,14 +1615,7 @@ textarea {
         width: 90%;
     }
 
-    .line1 {
-        width: 10%;
-    }
-
-    .line1::before {
-        position: absolute;
-        left: -50px;
-    }
+    
 
     .about {
         height: 1900px;
@@ -1681,24 +1683,5 @@ textarea {
         font-size: 20px;
         width: 90%;
         margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width:290px){
-    .work{
-        height: 900px;
-    }
-
-    .line{
-        height: 3485px;
-    }
-
-    .line1 {
-        width: 10%;
-    }
-
-    .line1::before {
-        position: absolute;
-        left: -54px;
     }
 }
