@@ -1494,7 +1494,7 @@ textarea {
 
     .line {
         border-left: 2px solid #5918df;
-        height: 3480px;
+        height: 3580px;
         position: absolute;
         left: 10%;
         margin-left: -3px;
@@ -1554,7 +1554,7 @@ textarea {
     }
 
     .about {
-        height: 1500px;
+        height: 1600px;
     }
 
     .work-content1 {
