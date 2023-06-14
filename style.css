@@ -1396,7 +1396,7 @@ textarea {
     }
 
     .line {
-        height: 3000px;
+        height: 3200px;
     }
 
     .line1::before {
@@ -1424,7 +1424,7 @@ textarea {
     }
 
     .about {
-        height: 1100px;
+        height: 1300px;
         padding-top: 50px;
     }
 
@@ -1454,7 +1454,7 @@ textarea {
 }
 
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:324px) {
 
     .header {
         height: 600px;
