@@ -52,6 +52,6 @@ function validation() {
   }
 
   function home(){
-    location.href = "#start";
+    location.href = "/";
   }
 // timer2ER </>Sathyakumar
