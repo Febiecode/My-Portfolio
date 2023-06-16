@@ -54,7 +54,3 @@ function validation() {
   function home(){
     location.href = "#start";
   }
-
-  function site(link, num) {
-    window.location.assign(link);
-}
