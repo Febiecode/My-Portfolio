@@ -1642,7 +1642,7 @@ textarea {
     }
     .dot3::before{
         position: absolute;
-        top: 2390px;
+        top: 2490px;
     }
 
     .dot4{
@@ -1719,7 +1719,7 @@ textarea {
     }
 
     .about {
-        height: 1000px;
+        height: 1100px;
     }
 
     .work-content1 {
