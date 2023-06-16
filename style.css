@@ -93,7 +93,6 @@ html {
     background: black;
     z-index: -1;
 }
-
 #main-menu {
     display: block;
     height: 100px;
@@ -102,7 +101,6 @@ html {
     margin: 0px;
     z-index: 9;
 }
-
 #main-menu ul {
     max-width: 800px;
     width: 100%;
@@ -114,26 +112,21 @@ html {
     align-items: center;
     z-index: 9;
 }
-
 #main-menu li {
     list-style-type: none;
     font-size: 2rem;
 }
-
 #main-menu a {
     color: #595360;
     font-size: 1.5rem;
     text-decoration: none;
 }
-
 #main-menu a:hover {
     text-decoration: underline;
 }
-
 #hamburger-input {
     display: none;
 }
-
 #hamburger-menu {
     position: fixed;
     top: 20px;
@@ -152,7 +145,6 @@ html {
             #100e17 60%, #100e17 80%,
             #fff 80%, #fff 100%);
 }
-
 #hamburger-menu #sidebar-menu {
     visibility: hidden;
     position: fixed;
@@ -165,39 +157,28 @@ html {
     padding: 0px 10px;
     box-sizing: border-box;
 }
-
-/* #hamburger-menu h3 {
-    color: #B9FAF8;
-    font-size: 2.2rem;
-} */
-
 #hamburger-menu ul {
     position: relative;
     left: 20px;
     top: 50px;
     padding-left: 0px;
 }
-
 #hamburger-menu li {
     list-style-type: none;
     line-height: 3rem;
 }
-
 #hamburger-menu a {
     color: #595360;
     font-size: 1.3rem;
     text-decoration: none;
 }
-
 #hamburger-menu a:hover {
     text-decoration: underline;
 }
-
 #hamburger-input:checked+#hamburger-menu #sidebar-menu {
     visibility: visible;
     left: 0;
 }
-
 #hamburger-input:checked~.overlay {
     visibility: visible;
     opacity: 0.4;
@@ -218,9 +199,6 @@ html {
         z-index: 9;
     }
 }
-
-
-
 
 /* #mouse-circle {
     position: absolute;
@@ -335,6 +313,87 @@ a {
     border: #5918df solid 2px;
 }
 
+.indicator {
+    width: 50px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    position: relative;
+    top: 350px;
+    left: -25px;
+}
+
+.indicator:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #5918df;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 2px;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+.dot1::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    top: 640px;
+    height: 10px;
+    left: -0.02em;
+    transform: translate(-50%, -50%);
+    background-color: #1a181e;
+    border-radius: 50%;
+    border: #5918df solid 2px;
+}
+
+/* @media screen and (max-width:320px){
+
+    
+} */
+
+.dot2::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    top: 1440px;
+    height: 10px;
+    left: -0.02em;
+    transform: translate(-50%, -50%);
+    background-color: #1a181e;
+    border-radius: 50%;
+    border: #5918df solid 2px;
+}
+
+.dot3::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    top: 2240px;
+    height: 10px;
+    left: -0.02em;
+    transform: translate(-50%, -50%);
+    background-color: #1a181e;
+    border-radius: 50%;
+    border: #5918df solid 2px;
+}
+
+.dot4::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    top: 2780px;
+    height: 10px;
+    left: -0.02em;
+    transform: translate(-50%, -50%);
+    background-color: #1a181e;
+    border-radius: 50%;
+    border: #5918df solid 2px;
+}
+
 .content {
     position: absolute;
     width: 50%;
@@ -361,29 +420,7 @@ a {
     font-weight: bolder;
 }
 
-.indicator {
-    width: 50px;
-    height: 70px;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    position: relative;
-    top: 150px;
-    right: 73px;
-}
 
-.indicator:before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #5918df;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 2px;
-    border-radius: 50%;
-    animation: animate 1s linear infinite;
-}
 
 @keyframes animate {
     0% {
@@ -454,7 +491,7 @@ section {
     padding: 10px;
 }
 
-.line1 {
+/* .line1 {
     border-left: 2px solid #5918df;
     position: relative;
     left: 25%;
@@ -473,7 +510,7 @@ section {
     background-color: #1a181e;
     border-radius: 50%;
     border: #5918df solid 2px;
-}
+} */
 
 .about {
     background-color: #15131c;
@@ -752,10 +789,10 @@ textarea {
     }
 
     .indicator {
-        left: -60px;
+        left: -18px;
         width: 35px;
         height: 45px;
-        top: 20px;
+        top: 260px;
     }
 
     .line {
@@ -764,6 +801,37 @@ textarea {
         height: 2300px;
         margin-left: -3px;
         top: 160px;
+    }
+
+    .dot1{
+        position: relative;
+    }
+    .dot1::before{
+        position: absolute;
+        top: 510px;
+    }
+
+    .dot2{
+        position: relative;
+    }
+    .dot2::before{
+        position: absolute;
+        top: 1015px;
+    }
+
+    .dot3{
+        position: relative;
+    }
+    .dot3::before{
+        position: absolute;
+        top: 1710px;
+    }
+    .dot4{
+        position: relative;
+    }
+    .dot4::before{
+        position: absolute;
+        top: 2250px;
     }
 
     .entry-content {
@@ -778,10 +846,6 @@ textarea {
         position: relative;
         left: 400px;
         width: 60%;
-    }
-
-    .line1 {
-        width: 10%;
     }
 
     .work-content1 {
@@ -872,10 +936,10 @@ textarea {
     }
 
     .indicator {
-        left: -56px;
+        left: -18px;
         width: 35px;
         height: 45px;
-        top: 20px;
+        top: 260px;
     }
 
     .line {
@@ -884,6 +948,37 @@ textarea {
         height: 2530px;
         margin-left: -3px;
         top: 160px;
+    }
+
+    .dot1{
+        position: relative;
+    }
+    .dot1::before{
+        position: absolute;
+        top: 500px;
+    }
+
+    .dot2{
+        position: relative;
+    }
+    .dot2::before{
+        position: absolute;
+        top: 1095px;
+    }
+
+    .dot3{
+        position: relative;
+    }
+    .dot3::before{
+        position: absolute;
+        top: 1940px;
+    }
+    .dot4{
+        position: relative;
+    }
+    .dot4::before{
+        position: absolute;
+        top: 2480px;
     }
 
     .entry-content {
@@ -931,15 +1026,6 @@ textarea {
     .work-subContent {
         font-size: 20px;
         width: 90%;
-    }
-
-    .line1 {
-        width: 20%;
-    }
-
-    .line1::before {
-        position: absolute;
-        left: -93px;
     }
 
 
@@ -1037,12 +1123,12 @@ textarea {
         top: 36px;
     }
 
-    .line {
+    /* .line {
         position: absolute;
         left: 16%;
         margin-left: -3px;
         top: 160px;
-    }
+    } */
 
     .entry-content {
         font-size: 30px;
@@ -1085,20 +1171,41 @@ textarea {
     }
 
     .indicator {
-        left: -47px;
+        left: -18px;
         width: 35px;
         height: 45px;
-        top: 20px;
+        top: 260px;
     }
 
-    .line {
+    .line{
+        position: relative;
+        width: 10%;
+        left: 15%;
+        right: 30px;
+    }
+    .dot1{
+        position: relative;
+    }
+    .dot1::before{
         position: absolute;
-        left: 16%;
-        height: 2600px;
-        margin-left: -3px;
-        top: 160px;
+        top: 500px;
     }
 
+    .dot2{
+        position: relative;
+    }
+    .dot2::before{
+        position: absolute;
+        top: 1000px;
+    }
+
+    .dot3{
+        position: relative;
+    }
+    .dot3::before{
+        position: absolute;
+        top: 1995px;
+    }
 
     .menu {
         position: relative;
@@ -1144,16 +1251,6 @@ textarea {
         font-size: 20px;
         width: 90%;
     }
-
-    .line1 {
-        width: 20%;
-    }
-
-    .line1::before {
-        position: absolute;
-        left: -70px;
-    }
-
 
     .work-content1 {
         position: relative;
@@ -1242,10 +1339,10 @@ textarea {
     }
 
     .indicator {
-        left: -48px;
+        left: -18px;
         width: 35px;
         height: 45px;
-        top: -20px;
+        top: 220px;
     }
 
     .line {
@@ -1255,6 +1352,40 @@ textarea {
         top: 120px;
         height: 2840px;
     }
+
+    .dot1{
+        position: relative;
+    }
+    .dot1::before{
+        position: absolute;
+        top: 500px;
+    }
+
+    .dot2{
+        position: relative;
+    }
+    .dot2::before{
+        position: absolute;
+        top: 1255px;
+    }
+
+    .dot3{
+        position: relative;
+    }
+    .dot3::before{
+        position: absolute;
+        top: 2250px;
+    }
+
+    .dot4{
+        position: relative;
+    }
+    .dot4::before{
+        position: absolute;
+        top: 2800px;
+    }
+
+
 
     .entry-content {
         font-size: 30px;
@@ -1295,15 +1426,6 @@ textarea {
     .work-subContent {
         font-size: 20px;
         width: 90%;
-    }
-
-    .line1 {
-        width: 20%;
-    }
-
-    .line1::before {
-        position: absolute;
-        left: -64px;
     }
 
     .work-content1 {
@@ -1402,20 +1524,43 @@ textarea {
         height: 3200px;
     }
 
-    .line1::before {
+    .dot1{
+        position: relative;
+    }
+    .dot1::before{
         position: absolute;
-        left: -57px;
+        top: 500px;
     }
 
-    .line1 {
-        width: 20%;
+    .dot2{
+        position: relative;
+    }
+    .dot2::before{
+        position: absolute;
+        top: 1320px;
+    }
+
+    .dot3{
+        position: relative;
+    }
+    .dot3::before{
+        position: absolute;
+        top: 2620px;
+    }
+
+    .dot4{
+        position: relative;
+    }
+    .dot4::before{
+        position: absolute;
+        top: 3150px;
     }
 
     .indicator {
-        left: -52px;
+        left: -18px;
         width: 35px;
         height: 45px;
-        top: -30px;
+        top: 260px;
     }
 
 
@@ -1457,7 +1602,7 @@ textarea {
 }
 
 
-@media screen and (max-width:324px) {
+@media screen and (max-width:320px) {
 
     .header {
         height: 600px;
@@ -1472,11 +1617,47 @@ textarea {
         left: 60px;
     }
 
+    .line{
+        height:2970px;
+    }
+
+    .dot1{
+        position: relative;
+    }
+    .dot1::before{
+        position: absolute;
+        top: 545px;
+    }
+
+    .dot2{
+        position: relative;
+    }
+    .dot2::before{
+        position: absolute;
+        top: 1390px;
+    }
+
+    .dot3{
+        position: relative;
+    }
+    .dot3::before{
+        position: absolute;
+        top: 2390px;
+    }
+
+    .dot4{
+        position: relative;
+    }
+    .dot4::before{
+        position: absolute;
+        top: 2930px;
+    }
+
     .indicator {
-        left: -48px;
+        left: -18px;
         width: 35px;
         height: 45px;
-        top: -30px;
+        top: 290px;
     }
 
     .name {
@@ -1494,16 +1675,6 @@ textarea {
     .st1 {
         font-size: 30px;
     }
-
-    .line {
-        border-left: 2px solid #5918df;
-        height: 3580px;
-        position: absolute;
-        left: 10%;
-        margin-left: -3px;
-        top: 120px;
-    }
-
     .menu {
         display: none;
     }
@@ -1547,17 +1718,8 @@ textarea {
         height: 700px;
     }
 
-    .line1 {
-        width: 10%;
-    }
-
-    .line1::before {
-        position: absolute;
-        left: -50px;
-    }
-
     .about {
-        height: 1600px;
+        height: 1000px;
     }
 
     .work-content1 {
@@ -1568,15 +1730,14 @@ textarea {
 
     .about-content {
         position: relative;
-        width: 70%;
+        width: 80%;
         top: 50px;
         left: 60px;
     }
 
     .about-elements {
-        width: 90%;
+        width: 100%;
         position: relative;
-        top: 5px;
         left: -10px;
     }
 

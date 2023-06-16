@@ -56,5 +56,5 @@ function validation() {
   }
 
   function site(link, num) {
-    window.open(link, '_blank');
+    window.open(link, '_self');
 }
