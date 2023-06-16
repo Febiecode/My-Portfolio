@@ -56,5 +56,5 @@ function validation() {
   }
 
   function site(link, num) {
-    window.location.href = link;
+    window.location.assign(link);
 }
