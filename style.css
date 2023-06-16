@@ -48,6 +48,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -472,6 +473,11 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+section a{
+    text-decoration: none;
+    color: #5918df;
 }
 
 
