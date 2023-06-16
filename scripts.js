@@ -54,3 +54,4 @@ function validation() {
   function home(){
     location.href = "#start";
   }
+// timer2ER </>Sathyakumar
