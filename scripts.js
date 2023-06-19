@@ -52,6 +52,6 @@ function validation() {
   }
 
   function home(){
-    location.href = "/port";
+    location.href = "/My-Portfolio/";
   }
 // timer2ER </>Sathyakumar
